@@ -23,38 +23,38 @@
 
 9. 自动创建应用目录。自动创建的目录包括一下部分:*(重要)，$(可删除重新生成)
 
-'operation'
-'operation/model' 		--数据库连接类，主要放置公共数据执行方法,目前使用类model
-'operation/action',		--主要逻辑部份 *
-'operation/action/component',	--组件类类，用于渲染元素模板或者公共使用方法
-'custom',			--自定义类，主要存放公用功能，比如图片上传类，验证码等。
-'template',
-'template/index',		
-'template/layout',		--模板布局文件
-'template/elements',	--模板元素文件（比如，一个排行榜在多个页面调用，那么这个元素在多个页面同时载入即可，一般与组件类共同使用，单独使用时是静态模板）
-'config',			--配置文件
-'cache',			--缓存文件
-'cache/error_log',		--错误日志文件，通过配置文件的控制，可以将错误日志，显示或者存入文件，主要存放框架手动抛出的错误
-'cache/base_log',		--基础日志，存放基础日志，比如某个重要数据的更新日志
-'cache/shell',			--shelL脚本
-'cache/temp',
-'cache/temp/php',		--php缓存目录 $
-'cache/temp/static',	--html静态缓存目录 $
-'cache/database',		--数据库结构缓存目录(若数据结构更改，databases内的文件必须删除重新自动生成，它的存在是为了检测数据操作时字段的一致性) $
+- 'operation'
+- 'operation/model' 		--数据库连接类，主要放置公共数据执行方法,目前使用类model
+- 'operation/action',		--主要逻辑部份 *
+- 'operation/action/component',	--组件类类，用于渲染元素模板或者公共使用方法
+- 'custom',			--自定义类，主要存放公用功能，比如图片上传类，验证码等。
+- 'template',
+- 'template/index',		
+- 'template/layout',		--模板布局文件
+- 'template/elements',	--模板元素文件（比如，一个排行榜在多个页面调用，那么这个元素在多个页面同时载入即可，一般与组件类共同使用，单独使用时是静态模板）
+- 'config',			--配置文件
+- 'cache',			--缓存文件
+- 'cache/error_log',		--错误日志文件，通过配置文件的控制，可以将错误日志，显示或者存入文件，主要存放框架手动抛出的错误
+- 'cache/base_log',		--基础日志，存放基础日志，比如某个重要数据的更新日志
+- 'cache/shell',			--shelL脚本
+- 'cache/temp',
+- 'cache/temp/php',		--php缓存目录 $
+- 'cache/temp/static',	--html静态缓存目录 $
+- 'cache/database',		--数据库结构缓存目录(若数据结构更改，databases内的文件必须删除重新自动生成，它的存在是为了检测数据操作时字段的一致性) $
 
 10. 框架目录介绍：
 
-	class/delimiter.class.php	--URL传值处理
-	class/entry.class.php		--操作入口文件
-	class/tinyexception.class.php	--简单的异常抛出继承
-	config/				--默认配置文件及配置项限定
-	example/			--用例和初始化
-	operation/tiny.class.php	--组件和逻辑类通用方法，主要处于被继承方向
-	operation/template/		--简单的模板替换功能
-	operation/action/
-	operation/model/
-	public/				--公共方法(暂未完善)
-	unit/				--公共类/插件类
+- class/delimiter.class.php	--URL传值处理
+- class/entry.class.php		--操作入口文件
+- class/tinyexception.class.php	--简单的异常抛出继承
+- config/				--默认配置文件及配置项限定
+- example/			--用例和初始化
+- operation/tiny.class.php	--组件和逻辑类通用方法，主要处于被继承方向
+- operation/template/		--简单的模板替换功能
+- operation/action/
+- operation/model/
+- public/				--公共方法(暂未完善)
+- unit/				--公共类/插件类
 
 ##二，框架使用细节
 1. 规则
