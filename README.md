@@ -22,7 +22,7 @@
 8. Exception 错误收集。
 
 9. 自动创建应用目录。自动创建的目录包括一下部分:*(重要)，$(可删除重新生成)
-	
+
 	'operation'
 	'operation/model' 		--数据库连接类，主要放置公共数据执行方法,目前使用类model
 	'operation/action',		--主要逻辑部份 *
@@ -55,7 +55,7 @@
 	operation/model/
 	public/				--公共方法(暂未完善)
 	unit/				--公共类/插件类
-		
+
 ##二，框架使用细节
 1. 规则
  - 文件名必须为 xxx.class.php，其中文件内容为 xxx的类，使用时，直接new xxx便可在任何地方调用。
